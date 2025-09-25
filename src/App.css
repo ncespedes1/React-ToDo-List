@@ -1,0 +1,142 @@
+#root {
+  min-width: 720px;
+  /* max-width: 1280px; */
+
+  /* display: flex;
+  justify-self: center; */
+
+  margin: 0;
+  padding: 2rem;
+
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  text-align: center;
+}
+
+body{
+  /* background-color: rgb(27, 73, 75); */
+  background-image: url('assets/todo_bg.jpg');
+  background-size: 500px 500px;
+  background-repeat: repeat;
+}
+
+.list-manager{
+  margin: 40px 60px;
+    /* padding: 20px; */
+    border: 2px solid #80bbbb;
+    border-radius: 10px;
+    background-color: #e0f8f8;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-variant: all-small-caps;
+    font-size: 8vh;
+    color: #0b6d6d;
+    padding: 30px 20px 0px 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-variant: all-small-caps;
+}
+
+/* #taskForm{
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+} */
+
+#taskInput {
+    padding: 5px 10px;
+    border: 1px solid #f1f5f5;
+    border-radius: 5px;
+    margin: 5px;
+
+    font-family: 'Trebuchet MS', monospace;
+}
+
+#addBtn {
+    background-color: #0b6d6d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin: 5px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 30px;
+    margin: 8px 25px ;
+    background-color: #f8f9fa;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Courier New', monospace;
+}
+
+.task-item:hover{
+  transform: scale(1.015);
+}
+
+.task-item.completed {
+    background-color: #cbebf0;
+    border-color: #c3e6cb;
+    color: #8e9eae;
+}
+
+.remove-btn {
+    background-color: #3ca8b2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {    
+    background-color: #b23c56;
+    color: white;
+}
+
+#listStats {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #b9e1e7;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'Courier New', monospace;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listStats p{
+    margin: 15px 50px;
+}
+
+#clearCompleted {
+    background-color: #b23c56;
+    color: white;
+    border: none;
+    margin: 10px 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+}
